@@ -1,0 +1,33 @@
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+
+{
+    int h, l, s, t;
+    printf("Height: ");
+    h = get_int();
+    
+    for(l = 0; l < h; l++)
+    {
+        for(s = 1; s < h - l; s++)
+        {
+            printf(" ");
+        }
+    
+        for(t = 0; t <= l; t++)
+        {
+            printf("#");
+        }
+        
+        printf(" ");
+        
+        for(t = 0; t < l + 1; t++)
+        {
+            printf("#");
+        }
+        
+        printf("\n");
+    }
+    
+}
